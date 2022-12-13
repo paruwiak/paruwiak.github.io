@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Uruchomienie gifu i muzyki po kliknięciu</title>
+  </head>
+  <body>
+    <audio id="swieta2" src="swieta2.wav"></audio>
+    <img id="swienta" src="cos.png" onclick="uruchom()">
+
+    <script>
+      function uruchom() {
+        const imgElement = document.getElementById('swienta');
+
+        imgElement.src='swienta.gif';
+
+        
+        const audioElement = document.getElementById('swieta2');
+
+        audioElement.play();
+      }
+    </script>
+  </body>
+</html>
